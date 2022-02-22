@@ -10,7 +10,7 @@ const HomeScreen = () => {
     const featchProducts = async () =>{
       const products = await fetch('/api/products')
       const data = await products.json()
-      console.log(products)
+      console.log(data)
       setProducts(data)
     }
 

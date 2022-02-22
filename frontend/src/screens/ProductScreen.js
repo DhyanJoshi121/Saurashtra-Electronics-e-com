@@ -19,8 +19,8 @@ const ProductScreen = () => {
           const data = await product.json()
           console.log(data)
           setProduct(data)
+
         }
-    
         featchProduct()
       },[])
 

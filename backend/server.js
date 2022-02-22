@@ -1,14 +1,16 @@
-const express = require('express')
+import express from 'express'
 const app = express()
-const products = require('./Data/products')
+import products from './Data/products.js'
+import dotenv from 'dotenv'
 
 
 
-app.listen(5000,console.log('running on 5000'))
+const PORT = process.env.PORT || 5000
+app.listen(PORT,console.log(`running on ${PORT}`))
 
 
 app.get('/',(req,res) => {
-    res.send('hello')
+    res.send(`hello mate running on ${PORT}`)
 })
 
 app.get('/api/products',(req,res) => {
