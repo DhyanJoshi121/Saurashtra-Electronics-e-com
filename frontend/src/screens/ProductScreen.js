@@ -1,14 +1,28 @@
 import React from 'react'
-import { Link,useParams,useNavigate } from 'react-router-dom'
+import { useState,useEffect } from 'react'
+import { Link,useParams,useNavigate, useRoutes } from 'react-router-dom'
 import Rating from '../components/Rating'
-import products from '../products'
+
 
 
 const ProductScreen = () => {
     let {id} = useParams();
     let navigate = useNavigate();
-   const product = products.find((p) => p._id === id)
+//    const product = products.find((p) => p._id === id)
+    const [product,setProduct] = useState({});
 
+
+    useEffect(()=>{
+
+        const featchProduct = async () =>{
+          const product = await fetch(`/api/product/${id}`)
+          const data = await product.json()
+          console.log(data)
+          setProduct(data)
+        }
+    
+        featchProduct()
+      },[])
 
   return (
     <div className='ProductScreenHero'>

@@ -10,7 +10,7 @@ html {
 
 header {
   background-color: #333;
-  height: 10vh;
+  min-height: 10vh;
   font-size: 1.5rem;
   overflow: hidden;
   display: flex;
@@ -50,7 +50,7 @@ nav h1{
 
 footer{
   height:10vh;
-  background-color: #333;
+  /* background-color: #333; */
   display:flex;
   justify-content: center;
   align-items: center;

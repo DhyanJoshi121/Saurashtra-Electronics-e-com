@@ -1,8 +1,21 @@
 import React from 'react'
-import products from "../products"
+import { useState, useEffect } from 'react'
 import Product from '../components/Product'
 
 const HomeScreen = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(()=>{
+
+    const featchProducts = async () =>{
+      const products = await fetch('/api/products')
+      const data = await products.json()
+      console.log(products)
+      setProducts(data)
+    }
+
+    featchProducts()
+  },[])
   return (
     <>
      <h1>Latest products </h1> 
