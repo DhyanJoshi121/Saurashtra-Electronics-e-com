@@ -31,16 +31,37 @@ nav ul {
   min-width: 20%;
   font-size: 1.5rem;
   justify-content: space-around;
+  
 }
 
 .fas {
   padding: 0 0.5rem;
 }
 
+.liLink{
+  color:lightgray;
+}
+
+nav h1{
+  color: lightgray;
+}
+
+/* Footer */
+
+footer{
+  height:10vh;
+  background-color: #333;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 /* main section */
 
 .hero {
-  height: 80vh;
+  min-height: 80vh;
   padding: 0.5rem 0;
   width: 80%;
   margin: auto;
@@ -107,4 +128,15 @@ h1 {
 
 .rating{
   padding: 1.5rem 0 0 0;
+}
+
+/* Product page */
+
+.goBack{
+  background-color: transparent;
+  border:none;
+}
+
+.ProductScreenHero{
+  margin:1.5rem 0;
 }
