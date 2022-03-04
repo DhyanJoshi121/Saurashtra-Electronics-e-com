@@ -11,8 +11,7 @@ html {
 header {
   background-color: #333;
   min-height: 10vh;
-  font-size: 1.5rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
 }
 
@@ -25,6 +24,11 @@ nav {
   color: lightcyan;
 }
 
+.navFont {
+  font-size: 1.2rem;
+}
+
+/*
 nav ul {
   list-style-type: none;
   display: flex;
@@ -46,7 +50,7 @@ nav h1 {
 }
 
 .userDropdown {
-  /* position: relative; */
+  /* position: relative; 
   color: black;
 }
 
@@ -85,7 +89,7 @@ nav h1 {
 
 .userName {
   cursor: pointer;
-}
+} */
 /*-----------------------------------------*/
 /* Footer */
 
