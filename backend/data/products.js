@@ -71,6 +71,16 @@ const products = [
     rating: 4,
     numReviews: 12,
   },
+  {
+    id: 1,
+    category: "TV",
+    brand: "samsung",
+    name: "SAMSUNG 80 cm (32 inch) HD Ready LED Smart TV  (UA32T4340AKXXL / UA32T4340BKXXL)",
+    image: " 1",
+    price: 16999,
+    description:
+      "Take your entertainment to the next level with this Samsung TV. With the Content Guide on this TV, you now have access to content from the top-rated TV shows. The HD picture quality, in combination with PurColor, will ensure that you never have a dull moment throughout your TV-viewing experience. Moreover, with the Screen Mirroring feature, you can connect your compatible devices and watch your favourite TV shows on the big screen.  ",
+  },
 ];
 
 export default products;

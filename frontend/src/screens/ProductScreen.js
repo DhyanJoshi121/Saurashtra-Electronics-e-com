@@ -55,7 +55,7 @@ const ProductScreen = () => {
             <li className="ratingLi">
               <Rating value={product.rating} text={product.numReviews} />
             </li>
-            <li className="priceLi">Price: ${product.price}</li>
+            <li className="priceLi">Price: ₹{product.price}</li>
             <li className="descriptionLi">
               Description: {product.description}{" "}
             </li>
@@ -63,7 +63,7 @@ const ProductScreen = () => {
           <div className="col3">
             <ul className="addToCartBox">
               <li className="priceCartBox">
-                Price: <span>${product.price}</span>
+                Price: <span>₹{product.price}</span>
               </li>
               <li className="stockCartBox">
                 Status:

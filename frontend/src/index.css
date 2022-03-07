@@ -123,6 +123,13 @@ footer {
   max-height: 100%;
 }
 
+/* .cardImage {
+  width: 230px;
+  height: 230px;
+  object-fit: contain;
+  object-position: center;
+} */
+
 .card {
   margin: 2rem;
   padding: 1rem 0.5rem;

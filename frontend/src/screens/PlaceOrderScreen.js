@@ -92,7 +92,7 @@ const PlaceOrderScreen = () => {
                       </Link>
                     </li>
                     <li>
-                      {item.qty} x ${item.price} = ${item.qty * item.price}
+                      {item.qty} x ₹{item.price} = ₹{item.qty * item.price}
                     </li>
                   </ul>
                 ))}
@@ -107,16 +107,16 @@ const PlaceOrderScreen = () => {
                 <h2>Order Items</h2>
               </li>
               <li className="checkoutCardli">
-                Items: <span>${cart.itemsPrice}</span>
+                Items: <span>₹{cart.itemsPrice}</span>
               </li>
               <li className="checkoutCardli">
-                Shipping: <span>${cart.shippingPrice}</span>
+                Shipping: <span>₹{cart.shippingPrice}</span>
               </li>
               <li className="checkoutCardli">
-                Tax: <span>${cart.taxPrice}</span>
+                Tax: <span>₹{cart.taxPrice}</span>
               </li>
               <li className="checkoutCardli">
-                Total: <span>${cart.totalPrice}</span>
+                Total: <span>₹{cart.totalPrice}</span>
               </li>
               <li className="checkoutCardli">{error && { error }}</li>
               <li className="checkoutCardBtnContainer">

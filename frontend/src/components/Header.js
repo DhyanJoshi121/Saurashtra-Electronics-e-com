@@ -69,7 +69,7 @@ const Header = () => {
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/" style={{ fontSize: "1.7rem" }}>
-            <NavbarBrand>E-com</NavbarBrand>
+            <NavbarBrand>Saurashtra Electronics</NavbarBrand>
           </LinkContainer>
           <NavbarToggle aria-controls="basic-navbar-nav" />
           <NavbarToggle id="basic-navbar-nav" />
