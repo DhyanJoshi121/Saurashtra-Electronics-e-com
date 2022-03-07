@@ -47,6 +47,16 @@ const App = () => {
               path="/admin/product/:id/edit"
               element={<ProductEditScreen />}
             />
+            <Route path="/search/:keyword" element={<HomeScreen />}></Route>
+            <Route path="/page/:pageNumber" element={<HomeScreen />}></Route>
+            <Route
+              path="/admin/productlist/:pageNumber"
+              element={<ProductListScreen />}
+            ></Route>
+            <Route
+              path="/search/:keyword/page/:pageNumber"
+              element={<HomeScreen />}
+            ></Route>
           </Routes>
         </main>
         <Footer />
