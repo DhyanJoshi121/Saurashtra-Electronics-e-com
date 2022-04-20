@@ -149,7 +149,7 @@ const OrderScreen = () => {
                       </Link>
                     </li>
                     <li>
-                      {item.qty} x ${item.price} = ${item.qty * item.price}
+                      {item.qty} x ₹{item.price} = ₹{item.qty * item.price}
                     </li>
                   </ul>
                 ))}
@@ -164,16 +164,16 @@ const OrderScreen = () => {
                 <h2>Order Items</h2>
               </li>
               <li className="checkoutCardli">
-                Items: <span>${order.itemsPrice}</span>
+                Items: <span>₹{order.itemsPrice}</span>
               </li>
               <li className="checkoutCardli">
-                Shipping: <span>${order.shippingPrice}</span>
+                Shipping: <span>₹{order.shippingPrice}</span>
               </li>
               <li className="checkoutCardli">
-                Tax: <span>${order.taxPrice}</span>
+                Tax: <span>₹{order.taxPrice}</span>
               </li>
               <li className="checkoutCardli">
-                Total: <span>${order.totalPrice}</span>
+                Total: <span>₹{order.totalPrice}</span>
               </li>
               {!order.isPaid && (
                 <li>

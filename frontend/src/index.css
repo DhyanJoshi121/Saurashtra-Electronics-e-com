@@ -668,7 +668,7 @@ a:hover {
   height: 300px;
   padding: 30px;
   margin: 40px;
-  border-radius: 50%;
+  border-radius: 0;
 }
 
 .carousel a {
@@ -695,4 +695,14 @@ a:hover {
 .carousel-indicators button.active {
   transition: all 1s ease-in;
   background-color: white;
+}
+
+.card-imgContainer {
+  height: 15rem;
+  overflow: hidden;
+}
+
+.card-imgContainer img {
+  height: 100%;
+  object-fit: contain;
 }

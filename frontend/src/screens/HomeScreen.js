@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+import { Row, Col } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import Product from "../components/Product";
 import { listProducts } from "../actions/productAction";
@@ -56,13 +57,22 @@ const HomeScreen = () => {
       ) : error ? (
         <h2>{error}</h2>
       ) : (
-        <div className="gridForCard">
-          {products.map((product) => (
-            <div key={product._id}>
-              <Product product={product} />
-            </div>
-          ))}
-        </div>
+        // <div className="gridForCard">
+        //   {products.map((product) => (
+        //     <div key={product._id}>
+        //       <Product product={product} />
+        //     </div>
+        //   ))}
+        // </div>
+        <>
+          <Row>
+            {products.map((product) => (
+              <Col sm={12} md={6} lg={4} xl={3}>
+                <Product product={product} />
+              </Col>
+            ))}
+          </Row>
+        </>
       )}
       <Paginate pages={pages} page={page} keyword={keyword ? keyword : ""} />
     </>

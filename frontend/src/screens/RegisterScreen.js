@@ -78,7 +78,7 @@ const RegisterScreen = () => {
         <button type="submit">Register</button>
         <h3>
           Have an Account?{""}
-          <Link to={redirect ? `/register?redirect=${redirect}` : "/register"}>
+          <Link to={redirect ? `/login?redirect=${redirect}` : "/login"}>
             Login
           </Link>
         </h3>

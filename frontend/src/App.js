@@ -25,6 +25,7 @@ const App = () => {
         <main className="hero">
           <Routes>
             <Route path="/shipping" element={<ShippingScreen />} />
+            <Route path="/login/shipping" element={<ShippingScreen />} />
             <Route path="/order/:id" element={<OrderScreen />} />
             <Route path="/placeorder" element={<PlaceOrderScreen />} />
             <Route path="/payment" element={<PaymentScreen />} />

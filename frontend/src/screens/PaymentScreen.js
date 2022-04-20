@@ -37,7 +37,7 @@ const PaymentScreen = () => {
           onChange={(e) => setPaymentMethod(e.target.value)}
         />
 
-        <label htmlFor="">PhonePe</label>
+        {/* <label htmlFor="">PhonePe</label>
         <input
           type="radio"
           name="paymentMethod"
@@ -45,7 +45,7 @@ const PaymentScreen = () => {
           value="PhonePe"
           checked
           onChange={(e) => setPaymentMethod(e.target.value)}
-        />
+        /> */}
         <button type="submit">Continue</button>
       </form>
     </div>
