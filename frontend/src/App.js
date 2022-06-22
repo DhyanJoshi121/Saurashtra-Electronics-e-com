@@ -24,6 +24,7 @@ const App = () => {
         <Header />
         <main className="hero">
           <Routes>
+            <Route path="/" element={<HomeScreen />} />
             <Route path="/shipping" element={<ShippingScreen />} />
             <Route path="/login/shipping" element={<ShippingScreen />} />
             <Route path="/order/:id" element={<OrderScreen />} />
@@ -35,7 +36,6 @@ const App = () => {
             <Route path="/product/:id" element={<ProductScreen />} />
             <Route path="/cart" element={<CartScreen />} />
             <Route path="/cart/:id" element={<CartScreen />} />
-            <Route path="/" element={<HomeScreen />} />
             <Route path="/admin/userlist" element={<UserListScreen />} />
             <Route path="/admin/users/:id/edit" element={<UserEditScreen />} />
             <Route path="/admin/productlist" element={<ProductListScreen />} />
